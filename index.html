@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #eda;
+        }
+        @keyframes grow {
+            from{
+                font-size: 10px;
+                color: yellow;
+                text-transform: capitalize;
+            }
+            to{
+                font-size: 60px;
+                color: green;
+                text-transform: uppercase;
+                background: skyblue;
+            }
+        }
+
+        h1 {
+            animation-name: grow;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3s;
+            position: relative;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    <title>Participants in JS</title>
+</head>
+<body>
+    <p>Today is:</p>
+    <script>
+        var today = new Date ();
+        document.write(today);
+
+        let counter = 0;
+        function count() {
+            //counter = counter + 3 or counter += or counter++
+            counter = counter + 1;
+            document.querySelector('#counter').innerHTML = counter;
+        }
+    </script>
+    <h2 id="counter">0</h2>
+    <button onclick="count()">count</button>
+    <h1>Welcome To School</h1>
+
+
+
+</body>
+</html>
